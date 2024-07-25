@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Winner Spin Wheel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <div class="container">
+        <div class="main-content">
+            <div id="wheel-container">
+                <canvas id="wheel" width="400" height="400"></canvas>
+                <button id="spin-btn">Spin the Wheel</button>
+            </div>
+            <div id="editor">
+                <h2>Edit Segment Names</h2>
+                <form id="edit-form">
+                    <label>
+                        Segment 1:
+                        <input type="text" id="segment1" value="Player 1">
+                    </label>
+                    <label>
+                        Segment 2:
+                        <input type="text" id="segment2" value="Player 2">
+                    </label>
+                    <label>
+                        Segment 3:
+                        <input type="text" id="segment3" value="Player 3">
+                    </label>
+                    <label>
+                        Segment 4:
+                        <input type="text" id="segment4" value="Player 4">
+                    </label>
+                    <label>
+                        Segment 5:
+                        <input type="text" id="segment5" value="Player 5">
+                    </label>
+                    <label>
+                        Segment 6:
+                        <input type="text" id="segment6" value="Player 6">
+                    </label>
+                    <button type="submit">Update Names</button>
+                </form>
+            </div>
+        </div>
+        <p id="winner"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
